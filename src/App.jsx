@@ -5,9 +5,10 @@ import ItemList from "./pages/ItemList";
 import ItemDetail from "./pages/ItemDetail";
 import AddItem from "./pages/AddItem";
 import EditItem from "./pages/EditItem";
-import ShopInfo from "./pages/ShopInfo";
 import ItemManagement from "./pages/ItemManagement";
-import TransactionHistory from "./pages/TransactionHistory";
+import ShopInfo from "./pages/ShopInfo";
+import TransactionList from "./pages/TransactionList";
+import TransactionDetail from "./pages/TransactionDetail";
 import MyInfo from "./pages/MyInfo";
 import NotFound from "./pages/NotFound";
 
@@ -15,13 +16,14 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/list" element={<ItemList />} />
+      <Route path="/item/list" element={<ItemList />} />
       <Route path="/item/:id" element={<ItemDetail />} />
-      <Route path="/new" element={<AddItem />} />
-      <Route path="/edit/:id" element={<EditItem />} />
+      <Route path="/item/add" element={<AddItem />} />
+      <Route path="/item/edit/:id" element={<EditItem />} />
+      <Route path="/item/management" element={<ItemManagement />} />
       <Route path="/shop" element={<ShopInfo />} />
-      <Route path="/item/manage" element={<ItemManagement />} />
-      <Route path="/history" element={<TransactionHistory />} />
+      <Route path="/transaction/list" element={<TransactionList />} />
+      <Route path="/transaction/:id" element={<TransactionDetail />} />
       <Route path="/my" element={<MyInfo />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
