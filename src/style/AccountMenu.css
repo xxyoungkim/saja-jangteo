@@ -1,0 +1,6 @@
+.account-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  background-color: white;
+}
