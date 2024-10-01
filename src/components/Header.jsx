@@ -5,7 +5,7 @@ import CategoryMenu from "./CategoryMenu";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="Header">
       <AccountMenu />
       <MainHeader />
       <CategoryMenu />
