@@ -1,0 +1,9 @@
+.HeaderButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-button-text {
+  font-weight: 600;
+}

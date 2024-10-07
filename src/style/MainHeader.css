@@ -1,6 +1,22 @@
 .MainHeader {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1fr;
+  column-gap: 24px;
   align-items: center;
   background-color: yellow;
+}
+
+.header-logo > h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-search {
+  justify-self: center;
+  width: 90%;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
 }
